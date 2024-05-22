@@ -11,9 +11,9 @@
 }
 
 body{
-    --color:var(--branco);
-    --background-color: var(--cor-de-fundo);
-    --font-family: var(--roboto);
+    color:var(--branco);
+    background: var(--cor-de-fundo);
+    font-family: var(--roboto);
 }
 
 .titulo-principal{
