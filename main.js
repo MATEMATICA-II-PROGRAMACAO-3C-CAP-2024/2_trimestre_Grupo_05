@@ -54,6 +54,6 @@ senha = senha + letrasMaiusculas[numeroAleatorio];
 campoSenha.value = senha;
 }
 campoSenha.value = letrasMaiusculas;
-const checkbox = document.querySelectorAll(‘.checkbox’);
+const checkbox = document.querySelectorAll('.checkbox');
 for (i=0; i < checkbox.length;i++){
-checkbox[i].onclick = geraSenha;
+checkbox[i].onclick = geraSenha;}
