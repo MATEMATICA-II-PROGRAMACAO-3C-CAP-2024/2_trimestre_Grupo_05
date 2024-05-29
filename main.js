@@ -66,3 +66,18 @@ const checkbox = document.querySelectorAll('.checkbox');
 for (i=0; i < checkbox.length;i++){
 checkbox[i].onclick = geraSenha;}
 const forcaSenha = document.querySelector('.forca');
+    
+function classificaSenha(tamanhoAlfabeto){
+    let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
+    if (entropia > 57){
+    forcaSenha.classList.add('forte');
+    } else if (entropia > 35 && entropia < 57 ) {
+    forcaSenha.classList.add('media');
+    forcaSenha.classList.add('fraca')
+    
+    }
+    const valorEntropia = document.querySelector('.entropia');
+    valorEntropia.textContent = entropia;
+    valorEntropia.textContent = "Um computador pode levar até " +
+    Math.floor(2**entropia/(100e6*60*60*24)) + " dias para descobrir essa senha.";
+}
