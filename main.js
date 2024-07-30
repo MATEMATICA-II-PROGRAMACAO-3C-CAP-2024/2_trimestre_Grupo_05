@@ -8,7 +8,7 @@ const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
 const numeros ='0123456789';
 const simbolos = '!@%*?';
 const botoes = document.querySelectorAll('.parametro-senha_botao');
-
+const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelectorAll('.checkbox');
 numeroSenha.textContent = 5;
 
@@ -34,7 +34,7 @@ function aumentaTamanho() {
     geraSenha();
 }
 
-const campoSenha = document.querySelector('#campo-senha');
+
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
 const numeros = '0123456789';
