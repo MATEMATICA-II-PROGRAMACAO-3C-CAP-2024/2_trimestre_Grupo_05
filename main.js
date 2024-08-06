@@ -63,10 +63,6 @@ campoSenha.value = senha;
 classificaSenha(alfabeto.length);
 
 }
-campoSenha.value = letrasMaiusculas;
-const checkbox = document.querySelectorAll('.checkbox');
-
-const forcaSenha = document.querySelector('.forca');
     
 function classificaSenha(tamanhoAlfabeto){
     let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
