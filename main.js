@@ -21,6 +21,7 @@ function diminuiTamanho() {
     numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
+
 function aumentaTamanho() {
     if (tamanhoSenha < 20) {
         // tamanhoSenha = tamanhoSenha+1;
@@ -56,6 +57,7 @@ function geraSenha() {
         numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + alfabeto[numeroAleatorio];
     }
+    
     campoSenha.value = senha;
     classificaSenha(alfabeto.length);
 
