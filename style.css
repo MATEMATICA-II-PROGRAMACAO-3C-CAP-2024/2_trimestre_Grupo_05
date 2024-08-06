@@ -10,6 +10,10 @@
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
+*{
+    font-weight:400;
+}
+
 body{
     color:var(--branco);
     background-color: var(--cor-de-fundo);
@@ -28,6 +32,7 @@ body{
 
 .conteudo-titulo{
     text-align:center;
+    margin-top: 80px;
 }
 
 .conteudo-senha{
@@ -38,7 +43,6 @@ body{
     }
 
 #campo-senha{
-        outline: none;
         background-color: var(--fundo-senha);
         border: none;
         color: var(--branco);
@@ -60,19 +64,12 @@ body{
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
     margin-top: 32px;
+    padding: 24px;
 }
 
 .parametro-titulo{
     font-family: var(--roboto-mono);
     font-size: 28px;
-}
-
-.parametro{
-    background-color: var(--fundo-texto);
-    border: 2px solid var(--borda);
-    margin-top: 32px;
-    padding: 24px;
-
 }
 
 .parametro-senha_titulo{
@@ -84,13 +81,6 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-
-@media screen and (min-width: 768px) {
-    .parametro-coluna_senha{
-    flex-direction: row;
-    
-    }
-    }
 
 .parametro-senha{
         width: 50%;
@@ -116,6 +106,17 @@ body{
     border-top: 2px solid var(--borda);
     border-bottom: 2px solid var(--borda);
     margin: 0;
+    font-size: 24px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer; 
 }
 
 .barra{
@@ -137,24 +138,22 @@ body{
     }
 
 .fraca{
-    height: 30px;
     width: 25%;
     background-color: #E71B32;
-    position: relative;
-    bottom: 30px;
 }
 
 .media{
-    height: 30px;
     width: 50%;
     background-color: #FAF408;
-    position: relative;
-    bottom: 30px;
 }
 .forte{
-    height: 30px;
     width: 100%;
     background-color: #00FF85;
-    position: relative;
-    bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .parametro-coluna_senha{
+    flex-direction: row;
+    
+    }
 }
